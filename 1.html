@@ -1,0 +1,35 @@
+{{lists.time}}
+<div  class="container col-lg-3 " ng-repeat="list in lists.data"  >
+ <!--    -->
+<div  class="style" >
+<label>Symbol : </label> {{list.symbol}}
+<label>Series : </label> {{list.series}}
+<label>Open Price : </label> {{list.openPrice}}
+<label>High Price : </label> {{list.highPrice}}
+<label>Low Price : </label> {{list.lowPrice}}
+<label>LTP : </label> {{list.ltp}}
+<label>Traded Quantity : </label> {{list.tradedQuantity}}
+<label>Turn Over In Lakhs : </label> {{list.turnoverInLakhs}}
+<label>LTP : </label> {{list.ltp}}
+<label>Last Corp Announcement Date: </label> {{list.lastCorpAnnouncementDate | date : 'mediumdate'}}
+
+<label>Previous Price : </label> {{list.previousPrice}}
+<label>Net Price : </label> {{list.netPrice}}
+</div>
+</div>    
+
+<style>
+.style {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #fff;
+    
+    border-radius: 10px;
+    max-width: 790px;
+    margin: 20px;
+
+}
+body {
+        background-color: #eee;
+}
+</style>
